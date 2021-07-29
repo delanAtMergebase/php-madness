@@ -26,7 +26,7 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
   
-- task: WhiteSource@21
+- task: whitesource.WhiteSource-azure-devops-services.bolt.wss.WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
     projectName: 'php-madness'
