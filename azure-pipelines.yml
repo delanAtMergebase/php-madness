@@ -8,7 +8,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-18.04
+  vmImage: ubuntu-latest
 
 variables:
   phpVersion: 7.4
@@ -29,4 +29,4 @@ steps:
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    projectName: 'php-madness'
+    projectName: php-madness
