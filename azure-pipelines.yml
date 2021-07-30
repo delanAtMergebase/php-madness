@@ -26,7 +26,7 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
   
-- task: whitesource.whiteSource-bolt-v2.bolt.wss.WhiteSource@21
+- task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
     projectName: 'php-madness'
